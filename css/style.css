@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+  position: relative;
+}
+
+.container {
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: hsl(0, 0%, 100%);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+.container .container-left {
+  flex: 1;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 600px) {
+  .container .container-left {
+    padding: 0 20px;
+  }
+}
+.container .container-left .hero__text {
+  margin-top: 20%;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .container .container-left .hero__text {
+    margin-top: 1%;
+  }
+}
+.container .container-left .hero__text h1 {
+  font-size: 2.5rem;
+}
+.container .container-left .hero__text p {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.container .container-left .hero__facts ul {
+  list-style: none;
+}
+.container .container-left .hero__facts ul li {
+  background-image: url(../assets/images/icon-list.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 20px;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.container .container-left .hero__email {
+  margin-top: 20px;
+}
+.container .container-left .hero__email .label-section {
+  display: flex;
+  justify-content: space-between;
+}
+.container .container-left .hero__email .label-section label,
+.container .container-left .hero__email .label-section span {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.container .container-left .hero__email .label-section span {
+  color: rgb(253, 0, 0);
+}
+.container .container-left .hero__email input {
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px;
+  outline-color: none;
+  border: 1px solid grey;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.container .container-left .hero__email button {
+  margin-top: 10px;
+  background: hsl(234, 29%, 20%);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 0.7rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+.container .container-left .hero__email button:hover {
+  background: linear-gradient(to right, hsl(4, 100%, 67%), rgb(255, 103, 66));
+}
+@media screen and (max-width: 600px) {
+  .container .container-left .hero__email button {
+    margin: 10px 0;
+  }
+}
+.container .container-right {
+  flex: 1;
+}
+@media screen and (max-width: 600px) {
+  .container .container-right {
+    padding: 0;
+  }
+}
+.container .container-right .illustration {
+  background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .container .container-right .illustration {
+    width: 100%;
+    height: 56vh;
+    background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.message {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 30px;
+  border-radius: 26px;
+  transform: translate(-50%, -50%);
+}
+.message .success__image__box {
+  width: 45px;
+  margin-bottom: 20px;
+}
+.message .success__image__box img {
+  width: 100%;
+}
+.message .success__text__box p:first-child {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.message .success__text__box p:last-child {
+  margin: 20px 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1ch;
+  line-height: 2.5ch;
+}
+.message .success__text__box p:last-child span {
+  font-size: inherit;
+  font-weight: bold;
+}
+.message .success__button__box button {
+  background: hsl(234, 29%, 20%);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 0.7rem;
+  width: 100%;
+  cursor: pointer;
+}
+.message .success__button__box button:hover {
+  background: linear-gradient(to right, hsl(4, 100%, 67%), rgb(255, 103, 66));
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .attribution {
+    display: none;
+  }
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
